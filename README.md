@@ -2,7 +2,7 @@
 
 A comprehensive machine learning project focusing on the classification of breast cancer tumors as **Malignant** or **Benign** using Logistic Regression. This project demonstrates high-performance predictive modeling and advanced hyperparameter optimization techniques.
 
-## 🚀 Overview
+## Overview
 Accurate medical diagnosis is a critical application of machine learning. This repository provides a complete analytical pipeline, from exploratory data analysis (EDA) to model deployment preparation, utilizing the Wisconsin Breast Cancer Diagnostic dataset.
 
 ### Key Features
@@ -11,7 +11,7 @@ Accurate medical diagnosis is a critical application of machine learning. This r
 - **Optimization**: Hyperparameter tuning via `GridSearchCV` (C, solver, penalty) with 5-fold cross-validation.
 - **Performance Evaluation**: Comprehensive metrics including Confusion Matrix, Precision, Recall, and F1-Score.
 
-## 📁 Project Structure
+## Project Structure
 ```text
 breast-cancer-logistic-regression/
 │
@@ -25,7 +25,7 @@ breast-cancer-logistic-regression/
 └── requirements.txt      # List of required Python packages
 ```
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 - Python 3.9 or higher
@@ -42,21 +42,21 @@ breast-cancer-logistic-regression/
    pip install -r requirements.txt
    ```
 
-## 📊 Usage
+## Usage
 The core logic and experiments are documented in the Jupyter notebook located in the `notebooks/` directory.
 
 ```bash
 jupyter notebook notebooks/Logistic_Regression_Breast_Cancer.ipynb
 ```
 
-## 📈 Model Performance
+## Model Performance
 The current baseline model highlights excellent predictive capabilities:
 - **Baseline Accuracy**: ~98.25%
 - **Hyperparameter Optimized**: Achieved ~98.02% (Cross-Validation Score)
 
 Detailed evaluation reports and confusion matrices are generated within the notebook to visualize model behavior and error patterns.
 
-## 📚 Dataset Source
+## Dataset Source
 This project uses the **Breast Cancer Wisconsin (Diagnostic)** dataset from the `sklearn.datasets` module.
 - **Total Samples**: 569
 - **Features**: 30 numeric attributes (radius, texture, perimeter, area, etc.)
