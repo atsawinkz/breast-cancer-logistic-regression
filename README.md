@@ -1,34 +1,66 @@
-# Breast-Cancer-Logistic-Regression
+# Breast Cancer Classification (Logistic Regression)
 
-Lab: การสร้างโมเดลจำแนกมะเร็งเต้านมด้วย Logistic Regression
+A comprehensive machine learning project focusing on the classification of breast cancer tumors as **Malignant** or **Benign** using Logistic Regression. This project demonstrates high-performance predictive modeling and advanced hyperparameter optimization techniques.
 
-โปรเจกต์นี้เป็นการจำลองการสร้างโมเดล Machine Learning เพื่อจำแนกประเภทของมะเร็งเต้านมด้วย Logistic Regression และทำการปรับจูน Hyperparameter ด้วย GridSearchCV
+## 🚀 Overview
+Accurate medical diagnosis is a critical application of machine learning. This repository provides a complete analytical pipeline, from exploratory data analysis (EDA) to model deployment preparation, utilizing the Wisconsin Breast Cancer Diagnostic dataset.
 
-Topics: `python`, `machine-learning`, `data-analysis`, `logistic-regression`, `breast-cancer-classification`, `hyperparameter-tuning`
+### Key Features
+- **Exploratory Data Analysis**: Visualizing class distributions and feature statistics.
+- **Predictive Modeling**: Robust implementation of a Logistic Regression classifier using `scikit-learn`.
+- **Optimization**: Hyperparameter tuning via `GridSearchCV` (C, solver, penalty) with 5-fold cross-validation.
+- **Performance Evaluation**: Comprehensive metrics including Confusion Matrix, Precision, Recall, and F1-Score.
 
-## Folder Structure
-- `data/`: ไฟล์ข้อมูลต้นฉบับ 
-- `notebooks/`: ไฟล์การทดลอง Jupyter Notebook (`Logistic_Regression_Breast_Cancer.ipynb`)
-- `src/`: ไฟล์โค้ดโปรแกรมหลัก 
-- `outputs/`: รูประหว่างการวิเคราะห์ข้อมูล โฟลเดอร์ที่จัดเตรียมไว้เผื่อเก็บโมเดลหรือผลลัพธ์
+## 📁 Project Structure
+```text
+breast-cancer-logistic-regression/
+│
+├── data/                 # Raw and augmented datasets
+├── notebooks/            # Jupyter Notebooks for research and development
+├── src/                  # Core source code (Python scripts)
+├── outputs/              # Saved visualizations and model outputs
+│
+├── .gitignore            # Git exclusion rules
+├── README.md             # Project documentation (current)
+└── requirements.txt      # List of required Python packages
+```
 
-## Dataset Source
-ชุดข้อมูล: Breast Cancer Wisconsin (Diagnostic) Dataset จาก Scikit-learn (`sklearn.datasets.load_breast_cancer`)
+## 🛠️ Installation
 
-## Installation (วิธีการติดตั้ง)
-1. Clone repository นี้:
+### Prerequisites
+- Python 3.9 or higher
+- `pip` or `conda` environment manager
+
+### Setup
+1. Clone the repository:
    ```bash
-   git clone [url-ของ-repository]
+   git clone https://github.com/your-username/breast-cancer-logistic-regression.git
    cd breast-cancer-logistic-regression
    ```
-2. สร้าง Virtual Environment (ถ้าต้องการ) และติดตั้ง Library ที่จำเป็น:
+2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-*Note เพิ่มเติม: หากต้องการนำโมเดลไปพัฒนาต่อเพื่อประมวลผลบน GPU (เช่น Deep Learning) อาจต้องติดตั้ง CUDA เพิ่มเติม*
 
-## Usage (วิธีใช้งาน)
-เปิด Jupyter Notebook ที่อยู่ในโฟลเดอร์ `notebooks/` เพื่อรันการทดลองทีละขั้นตอน:
+## 📊 Usage
+The core logic and experiments are documented in the Jupyter notebook located in the `notebooks/` directory.
+
 ```bash
 jupyter notebook notebooks/Logistic_Regression_Breast_Cancer.ipynb
 ```
+
+## 📈 Model Performance
+The current baseline model highlights excellent predictive capabilities:
+- **Baseline Accuracy**: ~98.25%
+- **Hyperparameter Optimized**: Achieved ~98.02% (Cross-Validation Score)
+
+Detailed evaluation reports and confusion matrices are generated within the notebook to visualize model behavior and error patterns.
+
+## 📚 Dataset Source
+This project uses the **Breast Cancer Wisconsin (Diagnostic)** dataset from the `sklearn.datasets` module.
+- **Total Samples**: 569
+- **Features**: 30 numeric attributes (radius, texture, perimeter, area, etc.)
+- **Target Classes**: 212 Malignant (0), 357 Benign (1)
+
+---
+*Developed for academic purposes in the Introduction to Machine Learning Course (2026).*
