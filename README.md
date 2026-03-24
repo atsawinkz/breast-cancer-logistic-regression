@@ -17,8 +17,6 @@ breast-cancer-logistic-regression/
 │
 ├── data/                 # Raw and augmented datasets
 ├── notebooks/            # Jupyter Notebooks for research and development
-├── src/                  # Core source code (Python scripts)
-├── outputs/              # Saved visualizations and model outputs
 │
 ├── .gitignore            # Git exclusion rules
 ├── README.md             # Project documentation (current)
